@@ -1,4 +1,4 @@
-<?php namespace PolicyServices\LaravelFullcalendar;
+<?php namespace PS\LaravelFullcalendar;
 
 use Illuminate\Support\ServiceProvider as BaseServiceProvider;
 
@@ -13,7 +13,7 @@ class ServiceProvider extends BaseServiceProvider
     public function register()
     {
         $this->app->bind('laravel-fullcalendar', function ($app) {
-            return $app->make('PolicyServices\LaravelFullcalendar\Calendar');
+            return $app->make('PS\LaravelFullcalendar\Calendar');
         });
     }
 

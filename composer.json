@@ -17,16 +17,16 @@
     },
     "autoload": {
         "psr-0": {
-            "PolicyServices\\LaravelFullcalendar": "src/"
+            "PS\\LaravelFullcalendar": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "PolicyServices\\LaravelFullcalendar\\ServiceProvider"
+                "PS\\LaravelFullcalendar\\ServiceProvider"
             ],
             "aliases": {
-                "Calendar": "PolicyServices\\LaravelFullcalendar\\Facades\\Calendar"
+                "Calendar": "PS\\LaravelFullcalendar\\Facades\\Calendar"
             }
         }
     },
