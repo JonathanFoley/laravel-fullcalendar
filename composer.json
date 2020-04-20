@@ -1,0 +1,31 @@
+{
+    "name": "ps-jf/laravel-fullcalendar",
+    "description": "PS Laravel helper for FullCalendar.io",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jonathan Foley",
+            "email": "jonathan.foley@policyservices.co.uk"
+        }
+    ],
+    "require": {
+        "php": ">=7.*",
+        "illuminate/support": "^6.*"
+    },
+    "autoload": {
+        "psr-0": {
+            "PolicyServices\\LaravelFullcalendar": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "PolicyServices\\LaravelFullcalendar\\ServiceProvider"
+            ],
+            "aliases": {
+                "Calendar": "PolicyServices\\LaravelFullcalendar\\Facades\\Calendar"
+            }
+        }
+    },
+    "minimum-stability": "stable"
+}
