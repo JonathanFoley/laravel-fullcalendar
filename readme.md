@@ -15,21 +15,6 @@ Or add the following to your composer.json's require section and `composer updat
 }
 ```
 
-### Laravel 5.4 (and earlier)
-
-Register the service provider in your `app.php` config file:
-
-```php
-PolicyServices\LaravelFullcalendar\ServiceProvider::class,
-```
-
-And optionally create an alias:
-
-```php
-'Calendar' => PolicyServices\LaravelFullcalendar\Facades\Calendar::class,
-
-```
-
 ### Laravel 5.5+
 The provider and `Calendar` alias will be registered automatically.
 
